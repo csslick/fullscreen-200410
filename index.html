@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>풀스크린동영상.html</title>
+  <style>
+    * {
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+      background: #000;
+    }
+    #bg {
+      min-width: 100%;
+      min-height: 100%;
+      background: #abc;
+      position: fixed;
+      left: 0; top: 0;
+    }
+    section {
+      position: absolute;
+      z-index: 99;
+      color: #fff;
+      /* outline: 3px solid red; */
+      width: 500px;
+      text-align: right;
+      right: 60px;
+      bottom: 60px;
+    }
+    section > h1 {
+      font-size: 60px;
+      text-shadow: 1px 1px 2px #333;
+    }
+    section > p {
+      font-size: 24px;
+      text-shadow: 1px 1px 2px #333;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Waves goes by</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sit!</p>
+  </section>
+  <video 
+    src="./video.mp4" 
+    id="bg"
+    autoplay
+    muted
+    loop
+  ></video>
+</body>
+</html>
